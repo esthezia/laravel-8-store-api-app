@@ -1,0 +1,144 @@
+{
+	"info": {
+		"_postman_id": "d1972cde-7f31-4b05-90c7-67efdfa6b971",
+		"name": "Store API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21283933"
+	},
+	"item": [
+		{
+			"name": "Delete Product",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "AuthToken",
+						"value": "$2y$10$mPe/4Npe831KuQx7zMnMduuIZFv8lrIc3G5vbifaecQkV55nlQkYq",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://store-api/delete-product/9",
+					"protocol": "http",
+					"host": [
+						"store-api"
+					],
+					"path": [
+						"delete-product",
+						"9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Product",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "AuthToken",
+						"value": "$2y$10$mPe/4Npe831KuQx7zMnMduuIZFv8lrIc3G5vbifaecQkV55nlQkYq",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "category_name",
+							"value": "Category Test",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "Product Test",
+							"type": "text"
+						},
+						{
+							"key": "sku",
+							"value": "8M7Y8OX3",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "15",
+							"type": "text"
+						},
+						{
+							"key": "quantity",
+							"value": "5",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://store-api/create-product",
+					"protocol": "http",
+					"host": [
+						"store-api"
+					],
+					"path": [
+						"create-product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit Product",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "AuthToken",
+						"value": "$2y$10$BxkBZzUNys6ZAE.D9zUnZuuvRe3dwiWCoLVqcrMzfEXcExNHd/Gga",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "category_name",
+							"value": "Category 162952356",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "Product Test EDIT",
+							"type": "text"
+						},
+						{
+							"key": "sku",
+							"value": "8M7Y8OX5",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "17",
+							"type": "text"
+						},
+						{
+							"key": "quantity",
+							"value": "3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://store-api/create-product/11",
+					"protocol": "http",
+					"host": [
+						"store-api"
+					],
+					"path": [
+						"create-product",
+						"11"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
